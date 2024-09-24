@@ -1,0 +1,27 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background of the circle -->
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="ring"
+            android:thickness="13dp"
+            android:useLevel="false">
+            <solid android:color="#D3D3D3" /> <!-- Light grey for unfilled portion -->
+        </shape>
+    </item>
+
+    <!-- Progress of the circle -->
+    <item android:id="@android:id/progress">
+        <rotate
+            android:fromDegrees="-300"
+            android:toDegrees="270">
+            <shape
+                android:shape="ring"
+                android:thickness="13dp"
+                android:useLevel="true">
+                <solid android:color="#FAA62B" /> <!-- Yellow color for the progress -->
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>
